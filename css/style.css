@@ -90,6 +90,9 @@ footer{
     width: 360px;
     height: 121px;
 }
+.boxBottom{
+  margin-left: 7px;
+}
 @media(max-width: 576px){
     .schooling h4{
         font-size: 36px;
