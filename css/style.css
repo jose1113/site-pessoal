@@ -73,6 +73,7 @@ footer{
     font-size: 64px;
     color: #04009A;
     font-weight: bold;
+    line-height: normal;
 }
 .box-subtitle{
     font-size: 24px;
