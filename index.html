@@ -9,9 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
     <header>
+      <div class="container m-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <a href="#topo" class="text-decoration-none">
+              <li class="breadcrumb-item active text-decoration-none" aria-current="page" accesskey="1" title="ALT 1 para ir até o Topo">Topo [1]</li>
+            </a>
+            <a href="#sobreMim" accesskey="2" class="text-decoration-none">
+              <li class="breadcrumb-item active" aria-current="page" title="ALT 2 para ir até Sobre mim">Sobre mim [2]</li>
+            </a>
+            <a href="#habilidades" class="text-decoration-none">
+              <li class="breadcrumb-item active" aria-current="page" accesskey="3" title="ALT 3 para ir até Habilidades">Habilidades [3]</li>
+            </a>
+            <a href="#minhaFormacao" class="text-decoration-none">
+              <li class="breadcrumb-item active" aria-current="page" accesskey="4" title="ALT 4 para ir até Minha formação">Minha formação [4]</li>
+            </a>
+            <li class="blockContraste w-75 d-flex justify-content-end">
+              <a class="contraste text-decoration-none" aria-hidden="true"></a>
+              <a class="translation text-decoration-none" aria-hidden="true"></a>
+            </li>
+          </ol>
+        </nav>
+      </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -37,7 +60,7 @@
               <div class="container mb-3 text-center w-50 h-25 text-white">
                   <div class="row">
                       <div class="col developer">
-                          <h1>Eu sou desenvolvedor Front-end</h1>
+                          <h1 id="topo">Eu sou desenvolvedor Front-end</h1>
                       </div>
                   </div>
               </div>
@@ -58,7 +81,7 @@
     <div class="container m-5 d-flex align-items-center">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 about">
-            <h2>Sobre mim</h2>
+            <h2 id="sobreMim">Sobre mim</h2>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <p class="text-justify">Sou um estudante da área de T.I., onde atualmente estou matrículado na FATEC  de Taquaritinga/SP.
@@ -78,7 +101,7 @@
       </div>
       <div class="container-fluid skills text-white rounded">
         <div class="container p-4">
-          <h3 class="text-center">Habilidades</h3>
+          <h3 class="text-center" id="habilidades">Habilidades</h3>
           <div class="row textSkills d-flex align-items-center">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <p>Desenvolvimento Front-end</p>
@@ -107,7 +130,7 @@
               </div>
             </div>
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center flex-column">
-                <div class="box text-center rounded mb-3">
+                <div class="box text-center rounded mb-3 m-auto">
                     <p class="box-title">3</p>
                     <p class="box-subtitle">Total de projetos</p>
                 </div>
@@ -128,7 +151,7 @@
       <div class="container schooling mt-4">
         <div class="row d-flex flex-column">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-6">
-            <h4>Minha formação</h4>
+            <h4 id="minhaFormacao">Minha formação</h4>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-6">
             <ul>
