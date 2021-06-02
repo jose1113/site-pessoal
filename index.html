@@ -9,34 +9,48 @@
     <link id="pagestyle" rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
     <header>
-      <div class="container m-3">
+      <div class="container p-3">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <a href="#topo" class="text-decoration-none">
-              <li class="breadcrumb-item active text-decoration-none" aria-current="page" accesskey="1" title="ALT 1 para ir até o Topo">Topo [1]</li>
+          <ol class="breadcrumb d-flex align-items-center row">
+            <a href="#topo" class="text-decoration-none col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" tabindex="1">
+              <li class="breadcrumb-item active text-decoration-none" aria-current="page" accesskey="1" title="ALT 1 para ir até o Topo" id="topUp">Topo [1]</li>
             </a>
-            <a href="#sobreMim" accesskey="2" class="text-decoration-none">
-              <li class="breadcrumb-item active" aria-current="page" title="ALT 2 para ir até Sobre mim">Sobre mim [2]</li>
+            <a href="#sobreMim" accesskey="2" class="text-decoration-none col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" tabindex="2">
+              <li class="breadcrumb-item active" aria-current="page" title="ALT 2 para ir até Sobre mim" id="sobreTopo">Sobre mim [2]</li>
             </a>
-            <a href="#habilidades" class="text-decoration-none">
-              <li class="breadcrumb-item active" aria-current="page" accesskey="3" title="ALT 3 para ir até Habilidades">Habilidades [3]</li>
+            <a href="#habilidades" class="text-decoration-none col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" tabindex="3">
+              <li class="breadcrumb-item active" aria-current="page" accesskey="3" title="ALT 3 para ir até Habilidades" id="skills">Habilidades [3]</li>
             </a>
-            <a href="#minhaFormacao" class="text-decoration-none">
-              <li class="breadcrumb-item active" aria-current="page" accesskey="4" title="ALT 4 para ir até Minha formação">Minha formação [4]</li>
+            <a href="#minhaFormacao" class="text-decoration-none col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2" tabindex="4">
+              <li class="breadcrumb-item active" aria-current="page" accesskey="4" title="ALT 4 para ir até Minha formação" id="educationTop">Minha formação [4]</li>
             </a>
-            <li class="blockContraste w-75 d-flex justify-content-end">
-              <a class="contrasteLight text-decoration-none" aria-hidden="true" onclick="swapStyleSheet('css/style.css')"></a>
-              <a class="contraste text-decoration-none" aria-hidden="true" onclick="swapStyleSheet('css/dark.css')"></a>
-              <a class="translation text-decoration-none" aria-hidden="true"></a>
-            </li>
+            <a href="#" class="d-flex flex-row text-decoration-none col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <li class="contrasteLight" aria-hidden="true" onclick="swapStyleSheet('css/style.css?version=25')" title="Contraste normal" tabindex="5"></li>
+              <li class="contraste" aria-hidden="true" onclick="swapStyleSheet('css/dark.css?version=16')" title="Contraste escuro" tabindex="6"></li>
+            </a>
+            <div class="d-flex flex-row col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <a href="#pt" class="mx-2 text-decoration-none text-dark" tabindex="7" data-reload>
+                <li>PT</li>
+              </a>
+              <a href="#en" class="text-decoration-none text-dark" tabindex="8" data-reload>
+                <li>EN</li>
+              </a>
+            </div>
+            </div>
           </ol>
         </nav>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light rounded-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                   <img src="#" alt="Logo">
@@ -47,10 +61,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre mim</a>
+                    <a class="nav-link" aria-current="page" href="#" id="sobre" tabindex="9">Sobre mim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="#" id="contato" tabindex="10">Contato</a>
                   </li>
                 </form>
               </div>
@@ -58,34 +72,34 @@
           </nav>
     </header>
     <div class="top rounded-bottom">
-              <div class="container mb-3 text-center w-50 h-25 text-white">
-                  <div class="row">
-                      <div class="col developer">
-                          <h1 id="topo">Eu sou desenvolvedor Front-end</h1>
-                      </div>
-                  </div>
+      <div class="container mb-3 text-center w-50 h-25 text-white">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 developer">
+                  <h1 id="topo">Eu sou desenvolvedor Front-end</h1>
               </div>
-              <div class="container d-flex justify-content-center align-items-center h-25 w-100 mt-4">
-                  <div class="row">
-                      <div class="col m-3 background">
-                          <a href="#"><img src="img/logo-facebook.png" alt="Logotipo do Facebook"></a>
-                      </div>
-                      <div class="col m-3 background">
-                          <a href="#"><img src="img/logo-github.png" alt="Logotipo do GitHub"></a>
-                      </div>
-                      <div class="col m-3 background">
-                          <a href="#"><img src="img/logo-linkedin.png" alt="Logotipo do Linkedin"></a>
-                      </div>
-                  </div>
+          </div>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center h-25 w-100 mt-4">
+          <div class="row">
+              <div class="col m-3 background">
+                  <a href="#"><img src="img/logo-facebook.png" alt="Logotipo do Facebook" tabindex="11"></a>
               </div>
+              <div class="col m-3 background">
+                  <a href="#"><img src="img/logo-github.png" alt="Logotipo do GitHub" tabindex="12"></a>
+              </div>
+              <div class="col m-3 background">
+                  <a href="#"><img src="img/logo-linkedin.png" alt="Logotipo do Linkedin" tabindex="13"></a>
+              </div>
+          </div>
+      </div>
     </div>
-    <div class="container m-5 d-flex align-items-center">
+    <div class="container mt-5 d-flex align-items-center">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 about">
-            <h2 id="sobreMim">Sobre mim</h2>
+            <h2 id="sobreBaixo">Sobre mim</h2>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-              <p class="text-justify">Sou um estudante da área de T.I., onde atualmente estou matrículado na FATEC  de Taquaritinga/SP.
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 sobreMimtext">
+              <p class="text-justify" id="sobreTexto">Sou um estudante da área de T.I., onde atualmente estou matrículado na FATEC  de Taquaritinga/SP.
                 Sou formado em Técnico em Sistemas para Internet, pela ETEC da mesma cidade.
                 Sendo assim, tenho experiência em algumas linguagens de programação, bem como frameworks.
                 Alguns deles estão listados abaixo.</p>
@@ -94,22 +108,22 @@
       </div>
       <div class="container my-4 d-flex justify-content-center">
           <div class="row">
-              <div class="col"><i class="fa fa-circle" aria-hidden="true"></i></div>
-              <div class="col"><i class="fa fa-circle" aria-hidden="true"></i></div>
-              <div class="col"><i class="fa fa-circle" aria-hidden="true"></i></div>
-              <div class="col"><i class="fa fa-circle" aria-hidden="true"></i></div>
+              <div class="col circle"></div>
+              <div class="col circle"></div>
+              <div class="col circle"></div>
+              <div class="col circle"></div>
           </div>
       </div>
       <div class="container-fluid skills text-white rounded">
         <div class="container p-4">
-          <h3 class="text-center" id="habilidades">Habilidades</h3>
+          <h3 class="text-center" id="skillsDown">Habilidades</h3>
           <div class="row textSkills d-flex align-items-center">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-              <p>Desenvolvimento Front-end</p>
+              <p id="developerDown">Desenvolvimento Front-end</p>
               <div class="progress mb-4">
                 <div class="progress-bar dev" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
               </div>
-              <p>HTML5 e CSS3</p>
+              <p id="code">HTML5 e CSS3</p>
               <div class="progress mb-4">
                 <div class="progress-bar htmlCss" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
               </div>
@@ -125,45 +139,45 @@
               <div class="progress mb-4">
                 <div class="progress-bar nuxt" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
               </div>
-              <p>Design gráfico</p>
+              <p id="graphicDesign">Design gráfico</p>
               <div class="progress mb-4">
                 <div class="progress-bar design" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
               </div>
             </div>
-              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center flex-column">
-                <div class="box text-center rounded mb-3 m-auto">
+            <div class="d-flex justify-content-center flex-column">
+              <div class="box text-center rounded mb-3 m-auto">
+                  <p class="box-title">3</p>
+                  <p class="box-subtitle" id="totalProjects">Total de projetos</p>
+              </div>
+              <div class="col d-flex flex-row">
+                <div class="box text-center rounded">
                     <p class="box-title">3</p>
-                    <p class="box-subtitle">Total de projetos</p>
+                    <p class="box-subtitle" id="completed">Concluídos</p>
                 </div>
-                <div class="col d-flex flex-row">
-                  <div class="box text-center rounded">
-                      <p class="box-title">3</p>
-                      <p class="box-subtitle">Total de projetos</p>
-                  </div>
-                  <div class="box boxBottom text-center rounded">
-                      <p class="box-title">3</p>
-                      <p class="box-subtitle">Total de projetos</p>
-                  </div>
+                <div class="box boxBottom text-center rounded">
+                    <p class="box-title">2</p>
+                    <p class="box-subtitle" id="progress">Em andamento</p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="container schooling mt-4">
         <div class="row d-flex flex-column">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-6">
-            <h4 id="minhaFormacao">Minha formação</h4>
+            <h4 id="myFormation">Minha formação</h4>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-6">
             <ul>
-              <li>
+              <li id="educationOne">
                 Formado em Técnico em Informática para Internet Etec Dans (2019)
               </li>
             </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 col-xxl-6">
             <ul>
-              <li>
+              <li id="educationTwo">
                 Cursando superior de tecnologia em Sistemas para Internet
               </li>
             </ul>
@@ -173,12 +187,16 @@
       <footer class="container-fluid d-flex justify-content-center rounded-top text-white">
         <div class="row mt-3">
           <div class="col">
-            <p>Copyright © José Igor - Todos os direitos reservados.</p>
+            <p id="rights">Copyright © José Igor - Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/73b1c01d95.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>
