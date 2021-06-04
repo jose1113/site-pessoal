@@ -25,7 +25,8 @@ let language = {
         myFormation: "Minha formação",
         educationOne: "Formado em Técnico em Informática para Internet Etec Dans (2019)",
         educationTwo: "Cursando superior de tecnologia em Sistemas para Internet",
-        rights: "Copyright © José Igor - Todos os direitos reservados."
+        rights: "Copyright © José Igor - Todos os direitos reservados.",
+        nameForm: "Nome"
     },
     en: {
         developer: "I'm a Front-end developer",
@@ -47,7 +48,8 @@ let language = {
         myFormation: "Education",
         educationOne: "Graduated in Technician in Computers for Internet Etec Dans (2019)",
         educationTwo: "Studying higher in technology in Internet Systems",
-        rights: "Copyright © José Igor - All rights reserved."
+        rights: "Copyright © José Igor - All rights reserved.",
+        nameForm: "Name"
     }
 }
 
@@ -72,7 +74,8 @@ if (window.location.hash) {
         myFormation.textContent = language.en.myFormation,
         educationOne.textContent = language.en.educationOne,
         educationTwo.textContent = language.en.educationTwo,
-        rights.textContent = language.en.rights
+        rights.textContent = language.en.rights,
+        nameForm.textContent = language.en.nameForm
     }
 }
 
