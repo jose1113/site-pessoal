@@ -7,8 +7,6 @@ let dataReload = document.querySelectorAll("[data-reload]")
 let language = {
     pt: {
         developer: "Eu sou desenvolvedor Front-end",
-        contact: "Contato",
-        aboutMe: "Sobre mim",
         topo: "Topo [1]",
         aboutMeup: "Sobre mim [2]",
         skills: "Habilidades [3]",
@@ -25,13 +23,10 @@ let language = {
         myFormation: "Minha formação",
         educationOne: "Formado em Técnico em Informática para Internet Etec Dans (2019)",
         educationTwo: "Cursando superior de tecnologia em Sistemas para Internet",
-        rights: "Copyright © José Igor - Todos os direitos reservados.",
-        nameForm: "Nome"
+        rights: "Copyright © José Igor - Todos os direitos reservados."
     },
     en: {
         developer: "I'm a Front-end developer",
-        contact: "Contact",
-        aboutMe: "About me",
         topo: "Top [1]",
         aboutMeup: "About me [2]",
         skills: "Skills [3]",
@@ -48,16 +43,13 @@ let language = {
         myFormation: "Education",
         educationOne: "Graduated in Technician in Computers for Internet Etec Dans (2019)",
         educationTwo: "Studying higher in technology in Internet Systems",
-        rights: "Copyright © José Igor - All rights reserved.",
-        nameForm: "Name"
+        rights: "Copyright © José Igor - All rights reserved."
     }
 }
 
 if (window.location.hash) {
     if (window.location.hash === "#en") {
         topo.textContent = language.en.developer,
-        contato.textContent = language.en.contact,
-        sobre.textContent = language.en.aboutMe,
         sobreTopo.textContent = language.en.aboutMeup,
         sobreBaixo.textContent = language.en.aboutMeDown,
         sobreTexto.textContent = language.en.sobreText,
@@ -74,8 +66,7 @@ if (window.location.hash) {
         myFormation.textContent = language.en.myFormation,
         educationOne.textContent = language.en.educationOne,
         educationTwo.textContent = language.en.educationTwo,
-        rights.textContent = language.en.rights,
-        nameForm.textContent = language.en.nameForm
+        rights.textContent = language.en.rights
     }
 }
 
