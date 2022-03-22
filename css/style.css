@@ -137,6 +137,13 @@ footer{
     text-decoration: none;
     margin-right: 10px;
 }
+
+.boxFull{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 @media(max-width: 576px){
     .schooling h4{
         text-align: center;
@@ -151,6 +158,7 @@ footer{
     .boxFull{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 @media(max-width: 768px){
