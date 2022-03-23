@@ -22,7 +22,7 @@
 }
 .about h2{
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 2.7rem;
     text-decoration: underline;
 }
 .top{
@@ -43,7 +43,7 @@
 .skills div h3{
     font-weight: bold;
     text-decoration: underline;
-    font-size: 4vw;
+    font-size: 2.7rem;
 }
 .htmlCss{
     width: 90%;
@@ -68,12 +68,12 @@ footer{
     font-weight: bold;
 }
 .schooling h4{
-    font-size: 4vw;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
 }
 .schooling div div ul li{
-    font-size: 3vw;
+    font-size: 1.7em;
 }
 .box-title{
     font-size: 4vw;
@@ -142,6 +142,11 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+footer #rights{
+    font-size: 0.8em;
+    margin: 0;
 }
 
 @media(max-width: 576px){
