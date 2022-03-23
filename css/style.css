@@ -149,6 +149,10 @@ footer #rights{
     margin: 0;
 }
 
+#sobreTexto{
+    font-size: 1em;
+}
+
 @media(max-width: 576px){
     .schooling h4{
         text-align: center;
